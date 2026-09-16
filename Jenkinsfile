@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'Jishan08/flask-docker-app'
-        REGISTRY_CREDENTIALS = 'dockerhub-credentials'
-    }
+    DOCKER_IMAGE = 'jishan08/flask-docker-app'
+    REGISTRY_CREDENTIALS = 'dockerhub-credentials'
+    DOCKER_HOST = 'npipe:////./pipe/dockerDesktopLinuxEngine'
+}
 
     stages {
 
